@@ -1,1 +1,1 @@
-将release包中的“依赖的第三方jar包”里面的所有jar文件拷入此目录中的WebRoot/WEB-INF/lib/目录下
+将release包中的“依赖的第三方jar包”里面的所有jar文件拷入此目录中的WebRoot/WEB-INF/lib/目录下http://hi.baidu.com/mvp_xuan/item/789262104e758f3bb93180d2
