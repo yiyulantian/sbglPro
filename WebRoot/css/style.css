@@ -1,0 +1,131 @@
+body,td,th {
+	font-size: 12px;
+	font-family:"宋体";
+}
+body {
+	background-color: #F0F8FF;/*F0FFF0 E0FFFF F0F8FF F0FFFF*/
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	font-size: 12px;
+	overflow: auto;
+}
+a {
+color:#000000;
+text-decoration:none;
+}
+a:hover{
+color:#990000;
+text-decoration:underline;
+}
+.ht_wzx {
+color:#FFFFFF;
+}
+#leftbox {
+	height: 100%;
+	width: 100%;
+	text-align: center;
+	margin:0px;
+	padding:0px;
+}
+#aa {
+	background: url(../images/admin_left_01.gif) no-repeat;
+	height: 29px;
+	line-height:29px;
+	width: 178px;
+	margin-right: 5px;
+	margin-left: 5px;
+	margin-bottom:5px;
+	margin-top: 10px;
+	color:#FFFFFF;
+	font-size:14px;
+	text-align:left;
+	text-indent:35px;
+}
+#aa1 {
+	height: 29px;
+	width: 178px;
+	line-height: 29px;
+}
+#bb {
+	background: url(../images/title_bg_show.gif) no-repeat;
+	height: 29px;
+	width: 178px;
+	margin-right: 5px;
+	margin-left: 5px;
+	line-height: 29px;
+	text-align: left;
+	text-indent:30px;
+	font-weight: bold;
+	cursor:pointer;
+}
+#cc,#dd,#ee,#ff,#gg,#hh,#ii,#kk,#ll{
+	height: auto;
+	width: 178px;
+}
+#divLink {
+	height: 29px;
+	width: 178px;
+	line-height: 29px;
+	text-align: left;
+	text-indent: 4em;
+	background: #D9F0FF url(../images/jt.gif);
+	background-position:center;
+}
+#jj {
+	line-height: 20px;
+	height: 80px;
+	width: 178px;
+	font-size: 12px;
+	background: #D7EFFF;
+}
+.centent-bk {
+	border: 1px solid #47B5FF;
+	background-image: url(../images/content_bj.jpg);
+	background-repeat: repeat-x;
+	background-position: bottom;
+	background-color: #CAEAFF;
+}
+.content-bk1 {
+	border: 1px solid #CCCCCC;
+}
+.er-bk1 {
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-right-color: #CCCCCC;
+	border-bottom-color: #CCCCCC;
+}
+.er-bk2 {
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #CCCCCC;
+}
+.er-bk3 {
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-right-color: #CCCCCC;
+}
+.er-bk4 {
+	border: 1px solid #A4B1D4;
+}
+.content_jl{
+margin-top:5px;
+}
+.bj-top {
+	background-repeat: no-repeat;
+	background-position: left center;
+}
+.bd-a {
+width:110px;
+}
+
+<!--文字变化JS效果-->
+.aaa {
+	color: black
+}
+.bbb {
+	color: blue
+}

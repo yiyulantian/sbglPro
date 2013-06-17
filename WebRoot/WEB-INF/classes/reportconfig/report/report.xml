@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<applications xmlns="http://www.wabacus.com"
+			   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+			   xsi:schemaLocation="http://www.wabacus.com ../xsd/wabacus.applications.xsd">
+	<page id="page" >
+	 	<interceptor> 
+           <imports> 
+              <import>java.sql.*</import> 
+           </imports> 
+           <preaction> 
+           <![CDATA[ 
+           		rrequest.getRequest().setAttribute("titlekey","人员信息");
+           
+            ]]> 
+           </preaction> 
+          </interceptor>
+		<report id="report1" title="request{titlekey}"  pagesize="20|40|100|200|-1" type="editablelist2">
+		<!-- title="&lt;font size=&quot;4&quot; color=&quot;red&quot;&gt;员工基本信息&lt;/font&gt;" -->
+			<display>
+				<col column="{sequence:1}" label="序号"/>
+				<col column="userid" label="用户编号" clickorderby="true" valuestyleproperty="style='mso-number-format:\@'"/>
+				<col column="username" label="用户名" clickorderby="true"/>
+				<col column="realname" label="真实姓名" clickorderby="true"/>
+			</display>
+			<sql>
+				<value>
+					<![CDATA[SELECT * from user where {#condition#} order by userid]]>
+				</value>
+				<condition name="txtno" label="用户编号">
+					<value>
+						<![CDATA[(userid like  '%#data#%' )]]>
+					</value>
+				</condition>
+				<condition name="txtname" label="用户名">
+					<value>
+						<![CDATA[(username like  '%#data#%' )]]>
+					</value>
+				</condition>
+
+				<update>
+			    <value>
+				update user (@{username},@{realname}) where userid=@{userid};
+				</value>
+				</update>
+			</sql>
+			<format>
+			  <value>
+					//t_sex=t_sex==null?"m":t_sex.trim();
+					//if(t_sex.equals("w")) t_sex="女";
+					//else t_sex="男";
+
+			  </value>
+			</format>
+		</report>
+	</page>
+</applications>
